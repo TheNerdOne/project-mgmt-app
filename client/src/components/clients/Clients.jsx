@@ -23,7 +23,7 @@ export default function Clients() {
             <tbody>
               {data.clients.map((client) => {
                 return (
-                  <tr>
+                  <tr key={client.id}>
                     <>
                       <td>{client.name}</td>
                       <td>{client.phone}</td>
